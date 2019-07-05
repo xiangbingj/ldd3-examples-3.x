@@ -23,7 +23,8 @@ static int probe(struct pci_dev *dev, const struct pci_device_id *id)
 	/* Do probing type stuff here.  
 	 * Like calling request_region();
 	 */
-	pci_enable_device(dev);
+	int rc;
+	rc = pci_enable_device(dev);
 	
 	if (skel_get_revision(dev) == 0x42)
 		return -ENODEV;
