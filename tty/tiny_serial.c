@@ -259,6 +259,8 @@ static struct uart_ops tiny_ops = {
 
 static struct uart_port tiny_port = {
 	.ops		= &tiny_ops,
+	.type		= 1000,
+	.uartclk	= 1843200,
 };
 
 static struct uart_driver tiny_reg = {
