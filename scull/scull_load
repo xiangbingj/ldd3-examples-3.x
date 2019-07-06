@@ -1,5 +1,8 @@
 #!/bin/sh
 # $Id: scull_load,v 1.4 2004/11/03 06:19:49 rubini Exp $
+
+set -x 
+
 module="scull"
 device="scull"
 mode="664"
